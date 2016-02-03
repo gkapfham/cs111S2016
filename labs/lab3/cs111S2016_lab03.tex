@@ -37,11 +37,11 @@ close attention to the {\tt Scanner} methods in Figure 2.7 and the program in Li
 
 In your {\tt cs111S2016-<your user name>} directory type the command ``{\tt mkdir lab3}'' to create a new directory for
 the third laboratory.  \noindent Type ``{\tt cd lab3}'' to change into this new directory.  To create the required file,
-type ``{\tt gvim Lab3.java}''. Begin your program by including the {\tt Template.java} file that you created during
-the last laboratory session (if you don't have one, you can still create one if you'd like---it will save you time!).
-Assuming that your {\tt Template.java} file is inside the {\tt labs/} directory, but not inside the {\tt lab3/}
-directory, you need to type: ``{\tt :r../Template.java}'' in {\tt gvim} to read your program template.  See last week's
-laboratory assignment for more information about creating and using the template. Remember, in {\tt gvim} and the
+type ``{\tt gvim Lab3.java}''. Begin your program by including the {\tt Template.java} file that you created during the
+last laboratory session (if, for some reason, you don't have one, you can still create one if you'd like---it will save
+you time!).  Assuming that your {\tt Template.java} file is inside the {\tt labs/} directory, but not inside the {\tt
+lab3/} directory, you need to type: ``{\tt :r../Template.java}'' in {\tt gvim} to read your program template.  See last
+week's laboratory assignment for more information about creating and using this template. Remember, in {\tt gvim} and the
 terminal window ``{\tt ..}'' stands for ``go back one directory'' and ``{\tt .}'' means ``the current directory''.
 
 \vspace{-0.15in}
@@ -54,7 +54,8 @@ particular, your program needs to do the following:
 \vspace*{-.1in}
 \begin{enumerate}
 
-\item Ask the user to enter a name (remember to save the user's input into a variable).
+\item Ask the user to enter a name (remember to save the user's input into a variable so that it can be used later in
+  the program and in the program's output).
 
 \item Using this name, display a friendly and appropriate welcome message to the user.
 
@@ -78,7 +79,8 @@ particular, your program needs to do the following:
         \item The total bill (including the tip)
     \end{itemize}
 
-\item Ask the user how many people will be splitting the total bill (remember to save the user's input into a variable).
+\item Ask the user how many people will be splitting the total bill (remember to save the user's input into a variable
+  so that it can be used later in the program and in the program's output).
 
 \item Calculate each person's share. For example, if you saved the number of people splitting the bill into a variable
   called {\em num\_people}, then you would calculate each person's share as $share = \frac{total\_bill}{num\_people}$. You should think (or rethink) your views concerning the data types you are using and whether a data
@@ -96,8 +98,7 @@ A sample run of this program is shown below:
       gkapfham@aldenv5:~/lab3$ java Lab3
       Gregory Kapfhammer
       Lab 3
-      Wed Sept 7 13:15:39 EDT 2015
-
+      Wed Feb 3 13:15:39 EST 2016
       Please enter your name: Timothy
       Timothy, welcome to the Tip Calculator!
       Please enter the amount of your bill: 50
@@ -117,7 +118,7 @@ Some points to remember as your complete this laboratory assignment:
   \setlength{\itemsep}{0pt}
 
 \item You will need to use the {\tt Scanner} class. Don't forget to import it at the top of your program. You may refer to
-  textbook for code samples demonstrating the use of the {\tt Scanner}.
+  the textbook for code samples demonstrating the use of the {\tt Scanner}.
 
 \item Students who want to learn more about how to use the {\tt Scanner} class can refer to pages 90 and 91 of the
   textbook, focusing on the {\tt GasMileage} class provided in Listing 2.9.
@@ -142,7 +143,7 @@ is okay!
 In addition to submitting signed and printed versions, for this assignment you are invited to turn in electronic
 versions of the following deliverables through your Bitbucket repository. As you complete this step, you should make sure
 that you created a {\tt lab3/} directory within the Git repository.  Then, you can save all of the required deliverables
-in the {\tt lab3/} directory---please see the course instructor or a teaching assistant if you are not able to properly
+in the {\tt lab3/} directory; please see the course instructor or a teaching assistant if you are not able to properly
 create your directory for this assignment.
 
 \begin{enumerate}
@@ -174,8 +175,8 @@ the instructor if you have questions about assignment submission.
 
 You may decide to try to format your floating-point-valued output to contain only a certain number of decimal places.
 Read ahead to Section 3.6 in Chapter 3 to see how you can do this---or ask your instructor or a teaching assistant for
-some suggestions for completing this challenge! While it is not mandatory for you to complete this challenge, you are
-invited to consider the advanced concept of output formatting if you have already completed the required parts of this
-assignment.
+some suggestions for completing this challenge! While it is not mandatory for you to explore this challenge, you are
+invited to consider the advanced concept of ``output formatting'' if you have already finished the required parts of
+this assignment.
 
 \end{document}
