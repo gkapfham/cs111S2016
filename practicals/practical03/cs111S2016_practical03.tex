@@ -5,37 +5,24 @@
 \subsection*{Summary}
 
 In this assignment, you will ``seed'' one of your past programs with defects, share this defective program with your
-partner (who will also share a program with you), and then see if you can find the mistakes that were purposefully
-introduced.
+partner (who will also share a program with you), and then you both will see if you can find the mistakes that were
+purposefully introduced. This assignment will allow you to further practice the skill of debugging programs and orally
+expressing your intentions for a program.
 
 \vspace*{-.1in}
 \subsection*{Review the Textbook}
 
-In addition to studying the slides for Chapter 2, be sure to read Section 2.1 of your book as it explains how
-to print some of the special characters, a topic that is also discussed at the end of this assignment. Please see the
-course instructor if you have questions about using escape characters.
+In addition to studying the slides for Chapters 1 and 2, be sure to read Sections 2.1 through 2.6 of your book as it
+to print some of the special characters, a topic that is also discussed at the end of this assignment.
+Please see the course instructor if you have questions about using escape characters.
 
 \vspace*{-.1in}
-\subsection*{Exercise: Print Something ``Interesting''}
+\subsection*{Seed Defects into Your Program}
 
-Create a Java program that uses a sequence of {\em no more than ten} {\tt System.out.println} statements to print
-something ``interesting.'' You may {\em not} use any other features of Java, such as variables, loops, etc.  However,
-you are {\em required} to use at least one of the ``escaped'' characters, such as \verb$\"$ or \verb$\\$.  Remember, it
-is possible to get pictures that are taller than ten lines by using the \verb$\n$ character in your {\tt println}
-statements. Please see the instructor if you have questions about this requirement.
 
-Your program must print your name and today's date (using ``{\tt new Date()}'' in a {\tt println} statement).  This will
-not count as part of the ten required print statements.
 
-% \begin{quote}
-You must come up with an {\em original} design---{\em under no circumstances} should you copy a design from another
-source, such as an ``ASCII Art'' web site. (However, you may look at such sites for inspiration.) The next two pages
-furnish two examples that you are encouraged to try. As you complete these two examples, please take time to pause and
-reflect on why the program produces the output that it does.  If you cannot get one of these examples to work, then
-please show a teaching assistant or the course instructor the problem that you are encountering.
-% \end{quote}
 
-\subsection*{Preparing for the Programming Task}
+\subsection*{Finding and Fixing Seeded Defects}
 
 Before you start creating the Java program required by this assignment, you should separately type the commands ``{\tt cd
   cs111S2016}'', ``{\tt cd cs111S2016-<your user name>}'', and ``{\tt cd practicals}'' in your terminal window. Once you
@@ -43,87 +30,6 @@ are in the {\tt practicals/} directory of your Git repository, you can type the 
 create a new directory for this assignment. You can run the {\tt gvim} command from this directory when you are ready to
 begin to implement the required Java program. Please see the instructor if you have problems with these preparatory steps.
 
-% \newpage
-
-\subsection*{Example 1: File ``{\tt PrintName.java}''}
-\begin{verbatim}
-     //**********************************
-     // Bob Roos
-     // Practical 2, 11-12 September 2015
-     //
-     // Prints a name `Bob'
-     //**********************************
-     import java.util.Date;
-     public class PrintName
-     {
-       public static void main(String[] args)
-       {
-          System.out.println("Bob Roos, CMPSC 111\n" + new Date() + "\n");
-          System.out.println(" ____        __");
-          System.out.println("  |  \\        |");
-          System.out.println("  |__/   __   |__");
-          System.out.println("  |  \\  /  \\  |  \\");
-          System.out.println(" _|__/  \\__/ _|__/");
-       }
-     }
-\end{verbatim}
-
-\noindent{\bf OUTPUT:}
-\begin{verbatim}
-     javac PrintName.java
-     java PrintName
-     Bob Roos, CMPSC 111
-     Wed Sep 10 21:04:41 EST 2015
-
-      ____        __
-       |  \        |
-       |__/   __   |__
-       |  \  /  \  |  \
-      _|__/  \__/ _|__/
-\end{verbatim}
-
-\newpage
-
-\subsection*{Example 2: File ``{\tt PrintFace.java}''}
-\begin{verbatim}
-     //**********************************
-     // Janyl Jumadinova
-     // Practical 2, 11-12 September 2015
-     // Prints a face
-     //**********************************
-     import java.util.Date;
-     public class PrintFace
-     {
-       public static void main(String[] args)
-       {
-          System.out.println("Janyl Jumadinova, CMPSC 111\n" + new Date() + "\n");
-          System.out.println("   \\\\\\|||///");
-          System.out.println("   /       \\");
-          System.out.println("   | -- -- |");
-          System.out.println("  @|  O O  |@");
-          System.out.println("   |   V   |");
-          System.out.println("    \\ \\_/ /");
-          System.out.println("     \\___/");
-       }
-     }
-\end{verbatim}
-\noindent{\bf OUTPUT:}
-\begin{verbatim}
-     javac PrintFace.java
-     java PrintFace
-     Janyl Jumadinova, CMPSC 111
-     Wed Sep 10 21:11:55 EST 2015
-
-        \\\|||///
-        /       \
-        | -- -- |
-       @|  O O  |@
-        |   V   |
-         \ \_/ /
-          \___/
-\end{verbatim}
-
-% \newpage
 \subsection*{Using Version Control Correctly}
 
 As you are typing your program in the {\tt gvim} text editor, you should regularly save your files.  Once you have
@@ -135,32 +41,13 @@ upload your Java program and an output produced by your program to Bitbucket usi
 Please review your ``Git Cheatsheet'' and talk with a member of the class, the course instructor, or a teaching
 assistant if you do not understand how to use some aspect of the Git version control system.
 
-\vspace*{-.1in}
-\subsection*{Hints About Java Programming and Escaped Characters}
-\vspace*{-.05in}
-
-The name of your program file (for instance, ``{\tt PrintFace.java}'') must be the same as the name in the ``{\tt public
-  class ...}'' statement---see earlier examples where you practiced this skill.
-
-The characters ``\verb$\$'' (backslash) and ``\verb$"$'' (double-quote)
-require special handling. To print them out, you need to put an extra
-``\verb$\$'' in front of them. For instance,
-
-\vspace*{-.1in}
-\begin{quote}
-The statement:\ \ \ \ \ \ \ \verb$System.out.println("backslash: \\, quote: \"");$\\
-prints:\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
-\verb$backslash: \, quote: "$
-\end{quote}
-\vspace*{-.1in}
+\vspace*{-.2in}
+\subsection*{General Guidelines for Practical Sessions}
 
 Since this is one of our first practical assignments and you are still learning how to use the Java programming
 language, don't become frustrated if you make a mistake. Instead, use your mistakes as an opportunity for learning both
 about the necessary technology and the background and expertise of the other students in the class, the teaching
 assistants, and the instructor.
-
-\vspace*{-.2in}
-\subsection*{General Guidelines for Practical Sessions}
 
 % Please follow these general guidelines as you complete this practical assignment:
 
