@@ -2,6 +2,7 @@
 \begin{document}
 \MYTITLE{Practical 3\\February 5, 2016\\Due in Bitbucket by midnight of the day of your practical \\ ``Checkmark'' grade}
 
+\vspace*{-.3in}
 \subsection*{Summary}
 
 In this assignment, you will ``seed'' one of your past programs with defects, share this defective program with a
@@ -9,8 +10,9 @@ partner (who will also share a program with you), and then you both will see if 
 purposefully introduced. This assignment will allow you to further practice the skills of debugging programs and orally
 expressing your intentions for a program.
 
-\vspace*{-.1in}
+\vspace*{-.15in}
 \subsection*{Review the Textbook}
+\vspace*{-.075in}
 
 In addition to studying the slides for Chapters 1 and 2, be sure to read Sections 2.1 through 2.6 of your book as it
 will give you a good review of the content that we have studied so far. Also, you should briefly review all of the Java
@@ -19,8 +21,9 @@ change into the ``share'' repository for this course and the ``student'' reposit
 assignments. Please see the course instructor if you have questions about topics like variables, expressions, and
 operators.
 
-\vspace*{-.1in}
+\vspace*{-.15in}
 \subsection*{Seed Defects into Your Program}
+\vspace*{-.075in}
 
 Before you start creating the Java program required by this assignment, you should separately type the commands ``{\tt
 cd cs111S2016}'', ``{\tt cd cs111S2016-<your user name>}'', and ``{\tt cd practicals}'' in your terminal window. Once
@@ -50,15 +53,30 @@ placed the mistakes, taking care to ensure that you partner does not see these n
 Once you and your partner are done inserting defects into your programs, you should explain to each other the
 overarching purpose of the programs that you implemented. For instance, if your program produces a diagram in the
 terminal window, then you should explain what it should look like and why you decided to implement it the fashion that
-you did. Or, if you program serves an intended purpose (e.g., a menu system for a tip calculator), then you should
+you did. Or, if your program serves an intended purpose (e.g., a menu system for a tip calculator), then you should
 detail it and highlight your goals for implementing the entire system. As you are discussing these matters with your
 partner, please be as detailed and specific as is possible, expressing all of the relevant aspects of your creation. Of
 course, you should be careful to not reveal the location of your program's defects!
 
+\vspace*{-.15in}
 \subsection*{Finding and Fixing Seeded Defects}
+\vspace*{-.075in}
 
+After you have inserted the defects into your program and you have had a thorough conversation with your partner, you
+should use email or Slack to share the source code of your program with each other. Please note that students should
+only use email or Slack for code sharing and not, under any circumstances, give their partner access to their entire
+Bitbucket repository. Once you have received a copy of your partner's file, please make sure that you save it in the
+{\tt practical03/} directory of your Git repository. Now, try to find and fix all of the defects that your partner
+inserted into the program. Once you locate and resolve one of these issues, please put a comment into the code to
+explain the problem that you found and the way in which you decided to handle it. As you fix the ``bugs'', you should
+use {\tt git} to transfer the improved version of the program to Bitbucket. Ultimately, your {\tt practical03/}
+directory in your Git repository should contain the source code for your defective program and the corrected source code
+for your partner's program. Finally, you should use {\tt gvim} to create a one to three paragraph file, called {\tt
+response}, that articulates and reflects on your experiences in seeding and finding defects in Java programs.
 
-\subsection*{Using Version Control Correctly}
+\vspace*{-.15in}
+\subsection*{General Guidelines for Practical Sessions}
+\vspace*{-.075in}
 
 As you are typing your program in the {\tt gvim} text editor, you should regularly save your files.  Once you have
 created a preliminary version of your program and it compiles and runs as anticipated, you should use the ``{\tt git
@@ -67,57 +85,58 @@ your local repository with a version control message.  Finally, you can run ``{\
 the Bitbucket servers.  For this practical assignment, you do {\em not} have to hand in a hard copy of anything---just
 upload your Java program and an output produced by your program to Bitbucket using the appropriate {\tt git} commands.
 Please review your ``Git Cheatsheet'' and talk with a member of the class, the course instructor, or a teaching
-assistant if you do not understand how to use some aspect of the Git version control system.
-
-\vspace*{-.2in}
-\subsection*{General Guidelines for Practical Sessions}
+assistant if you do not understand how to use some aspect of the Git version control system. Don't forget that it is
+extremely important for you to keep your Bitbucket repository well organized. Also, you are responsible for ensuring
+that your repository is shared with the course instructor.
 
 Since this is one of our first practical assignments and you are still learning how to use the Java programming
 language, don't become frustrated if you make a mistake. Instead, use your mistakes as an opportunity for learning both
-about the necessary technology and the background and expertise of the other students in the class, the teaching
-assistants, and the instructor.
+about the needed knowledge and skills in computer science.
+
+% technology and the background and expertise of the other students in the class, the teaching
+% assistants, and the instructor.
 
 % Please follow these general guidelines as you complete this practical assignment:
 
-\vspace*{-.05in}
-\begin{itemize}
+% \vspace*{-.05in}
+% \begin{itemize}
 
-% \itemsep -0.01in
-\itemsep 0in
+% % \itemsep -0.01in
+% \itemsep 0in
 
-\item {\bf Experiment!} Practical sessions are for learning by doing without the pressure of grades or ``right/wrong''
-  answers. So try things!  The best way to learn is by intelligently experimenting.
+% \item {\bf Experiment!} Practical sessions are for learning by doing without the pressure of grades or ``right/wrong''
+%   answers. So try things!  The best way to learn is by intelligently experimenting.
 
-\item {\bf Submit \textbf{\textit{Something}}.} Your grade for this assignment is a ``checkmark'' indicating whether you
-  did or did not complete the work and submit something to the Bitbucket repository using the ``{\tt git add}'', ``{\tt
-    git commit}'', and ``{\tt git push}'' commands.
+% \item {\bf Submit \textbf{\textit{Something}}.} Your grade for this assignment is a ``checkmark'' indicating whether you
+%   did or did not complete the work and submit something to the Bitbucket repository using the ``{\tt git add}'', ``{\tt
+%     git commit}'', and ``{\tt git push}'' commands.
 
-\item {\bf Practice Key Laboratory Skills.} As you are completing this assignment, practice using the {\tt gvim} text
-  editor and the Ubuntu terminal until you can easily use their most important features.  Additionally, ask
-  a teaching assistant or the course instructor to teach you some of the advanced features of {\tt gvim} and the
-  terminal, thereby helping you to work more effectively.
+% \item {\bf Practice Key Laboratory Skills.} As you are completing this assignment, practice using the {\tt gvim} text
+%   editor and the Ubuntu terminal until you can easily use their most important features.  Additionally, ask
+%   a teaching assistant or the course instructor to teach you some of the advanced features of {\tt gvim} and the
+%   terminal, thereby helping you to work more effectively.
 
-\item {\bf Try to Finish During the Class Session.} Practical exercises are not intended to be the equal of the
-  laboratory assignments. If you are simply a slow typist, I've given you until the end of the day, but ideally you
-  should upload a file, even a partially working one, by the end of the class period. So, make sure that you correctly
-  upload your file to your Git repository!
+% \item {\bf Try to Finish During the Class Session.} Practical exercises are not intended to be the equal of the
+%   laboratory assignments. If you are simply a slow typist, I've given you until the end of the day, but ideally you
+%   should upload a file, even a partially working one, by the end of the class period. So, make sure that you correctly
+%   upload your file to your Git repository!
 
-  % You also should ensure that, for this assignment and all subsequent assignments, you can confidently upload files to
-  % your Git repository during the practical session.
+%   % You also should ensure that, for this assignment and all subsequent assignments, you can confidently upload files to
+%   % your Git repository during the practical session.
 
-\item {\bf Help One Another!} If your neighbor is struggling and you know what to do, offer your help. Don't ``do the
-  work'' for them, but advise them on what to type or how to handle things. If you are stuck on a part of this practical
-  session and you could not find any insights in either your textbook or online sources, formulate an intelligent
-  question to ask your neighbor, a teaching assistant, or a course instructor. Try to strike the right balance between
-  asking for help when you cannot solve a problem and working independently to find a solution.
+% \item {\bf Help One Another!} If your neighbor is struggling and you know what to do, offer your help. Don't ``do the
+%   work'' for them, but advise them on what to type or how to handle things. If you are stuck on a part of this practical
+%   session and you could not find any insights in either your textbook or online sources, formulate an intelligent
+%   question to ask your neighbor, a teaching assistant, or a course instructor. Try to strike the right balance between
+%   asking for help when you cannot solve a problem and working independently to find a solution.
 
-\item {\bf Update Your Repository Often!} You should {\tt add}, {\tt commit}, and {\tt push} your updated files each
-  time you work on them, always including descriptive messages about each code change.
+% \item {\bf Update Your Repository Often!} You should {\tt add}, {\tt commit}, and {\tt push} your updated files each
+%   time you work on them, always including descriptive messages about each code change.
 
-\item {\bf Review the Honor Code Policy on the Syllabus.} Remember that while you may discuss programs with other
-  students in the course, programs that are nearly identical to, or merely variations on, the work of others will be
-  taken as evidence of violating the Honor Code.
+% \item {\bf Review the Honor Code Policy on the Syllabus.} Remember that while you may discuss programs with other
+%   students in the course, programs that are nearly identical to, or merely variations on, the work of others will be
+%   taken as evidence of violating the Honor Code.
 
-\end{itemize}
+% \end{itemize}
 
 \end{document}
