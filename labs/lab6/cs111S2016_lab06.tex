@@ -176,8 +176,8 @@ these questions with your partner, the teaching assistants, and your instructor.
 \subsection*{Creating a DNA Manipulation Program}
 \vspace{-0.05in}
 
-Bioinformatics is the study of biological phenomena by the use of biology, mathematics and computer science. One of the
-most important study areas in bioinformatics concerns DNA. Deoxyribonucleic acid (DNA) is a molecule that encodes the
+Bioinformatics is the study of biological phenomena by the use of biology, mathematics, and computer science. One of the
+most important study areas in bioinformatics concerns DNA. Deoxyribonucleic acid is a molecule that encodes the
 genetic instructions (genes) which are used by all known living organisms and many viruses to build the proteins
 required to sustain existence. The genes of DNA are written in the nucleotides; guanine (G), adenine (A), thymine (T),
 and cytosine (C), (chemical compounds) which serve as the alphabet of the genetic language.  Essentially, a DNA string
@@ -191,7 +191,7 @@ somewhere in the string; removal of a letter from the string; and replacement of
 table shows the examples of the replacement of letters and the complement of the given sequence. Do you understand what
 took place during each of these replacements? Make sure that you explain the meaning of each row in the table to your
 partner. Of course, you may talk with the course instructor or a teaching assistant or post a question in our Slack team
-if you find these examples to be difficult to understand.
+if you find these examples of DNA manipulation to be difficult to understand.
 
 \begin{center}
 
@@ -212,11 +212,12 @@ $S_{complementary}$ &  $\mathtt{TGCACGGAGAACCATG}$ \\
 \end{center}
 
 You and your partner should design and implement a Java program that does the following.  Note that all changes are made
-to the {\em original} input string; they are not cumulative.
+to the {\em original} input string --- that is, they are not cumulative.
 
 \begin{enumerate}
-\item
-Ask the user to type in a string of DNA, declare a variable and save the DNA string that the user inputs into a variable called ``{\tt dnaString}''.
+
+\item Prompt the user to type in a string of DNA, declare a variable and save the DNA string that the user inputs into a
+  variable called ``{\tt dnaString}''.
 
 \item Print the complement of {\tt dnaString}, appropriately labeled.  (Hint: use several applications of the String
   class's ``{\tt replace}'' method. For example, if I want to replace all characters `A' with characters `T' in the
@@ -232,25 +233,22 @@ sequence from the website  (using the \emph{Complement} option after you enter y
 \item[NOTE:]
 
 The next three parts of your program will also use Java's {\tt java.util.Random} class. You may want to read about the
-{\tt Random} class at the bottom of this document to understand the concepts behind the {\tt Random} class better; ask
-your course instructor for help with this class.
+{\tt Random} class at the end of this document to understand the concepts behind the {\tt Random} class better; you may
+also ask your instructor for help with this Java class.
 
-\item
-Perform a random mutation consisting of inserting a randomly-chosen
-extra letter into {\tt dnaString}; it
-must be one of the four allowed letters. Print this, appropriately labeled
-and identifying the position of the insertion and the letter inserted.
-\item
-Perform a random mutation consisting of removing a letter from a
-randomly-chosen position in {\tt dnaString}; print this, appropriately labeled
-and identifying the position of the insertion and the letter removed.
-\item
-Perform a random mutation consisting of altering a single letter from a
-randomly-chosen position in {\tt dnaString}; it must be changed to a
-randomly-chosen letter from the set of allowed letters. Print it, appropriately
-labeled
-and identifying the position of the replacement, the new letter, and the
-letter it replaces.
+\item \begin{sloppypar} Perform a random mutation consisting of inserting a randomly-chosen extra letter into {\tt
+  dnaString}; it must be one of the four ``allowed'' letters for DNA. Print this, ensuring that it is appropriately
+labeled and identifying the position of the insertion and the letter inserted. \end{sloppypar}
+
+\item Perform a random mutation consisting of removing a letter from a randomly-chosen position in the {\tt dnaString}.
+  Once again, display this in the terminal window, ensuring that it is appropriately labeled and identifying the
+  position of the insertion and the letter removed.
+
+\item Perform a random mutation consisting of altering a single letter from a randomly-chosen position in {\tt
+  dnaString}; it must be changed to a randomly-chosen letter from the set of allowed letters for DNA. Print it,
+  appropriately labeled and identifying the position of the replacement, the new letter, and the letter it replaces.
+  This is the last output your program must perform.
+
 \end{enumerate}
 
 The following gives two sample runs of a previously implemented version of the program. You will get different values, of course, since the
