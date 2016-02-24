@@ -51,7 +51,7 @@ to others will be taken as evidence of violating the Honor Code.
 
 To learn more about Java strings and random numbers, review Sections 3.1--3.5 in your textbook. To learn more about how
 to create and use Java classes, you may also want to read Sections 4.1 and 4.2, focusing on accepted conventions for
-organizing a class. Finally, you should carefully study the sample program described in the section in this assignment
+organizing a class. Finally, you should carefully study the sample program described in the section of this assignment
 called ``{Study A Sample Program}''.
 
 \vspace{-0.05in}
@@ -79,7 +79,7 @@ inside your own {\tt cs111S2016-<your user name>} repository.  Open this program
 Then run it a few times with different input strings.\\
 
 \noindent{\bf Questions to Discuss with Your Group Member}
-(not to be handed in):
+(your responses are not to be handed in):
 \begin{itemize}
 \item Where is the random number generator {\em declared}?
 \item Suppose you name the random number generator {\tt wilbur} instead of {\tt r}.
@@ -241,7 +241,7 @@ also ask your instructor for help with this Java class.
 labeled and identifying the position of the insertion and the letter inserted. \end{sloppypar}
 
 \item Perform a random mutation consisting of removing a letter from a randomly-chosen position in the {\tt dnaString}.
-  Once again, display this in the terminal window, ensuring that it is appropriately labeled and identifying the
+  Once again, display this in the terminal window, making sure that it is appropriately labeled and identifying the
   position of the insertion and the letter removed.
 
 \item Perform a random mutation consisting of altering a single letter from a randomly-chosen position in {\tt
@@ -341,10 +341,10 @@ about assignment submission.
 \vspace{-0.05in}
 \subsection*{A Quick Review of Random Number Generation}
 \vspace{-0.05in}
-To generate random numbers, we need an object of the {\tt Random} class.
-You can name this variable anything you want---``{\tt rand}'' or ``{\tt
-random}'' are good names. To create a new random number generator
-named {\tt rand}, be sure to import the {\tt Random} class:
+
+To generate random numbers, we need an object of the {\tt Random} class.  You can name this variable anything you want
+--- ``{\tt rand}'' or ``{\tt random}'' are acceptable names. To create a new random number generator named {\tt rand},
+be sure to import the {\tt Random} class:
 
 \vspace{-0.1in}
 \begin{center}
@@ -365,8 +365,8 @@ The three most useful methods in the {\tt Random} class are {\tt nextInt}, {\tt 
 {\tt rand} is the name of our random number generator (it can be called something else) and {\tt n} is a positive
 integer, {\tt rand.nextInt(n)} produces an {\tt int} in the range 0, \ldots, {\tt n}-1 and {\tt rand.nextDouble()} and
 {\tt rand.nextFloat()} produce a {\tt double} and a {\tt float} respectively in the range from 0 to 1 (not including 1).
-By being clever, we can get different ranges---here are a few examples. In the Java code, assume {\tt i} is an {\tt int}
-variable, {\tt d} is a {\tt double} variable, and {\tt rand} is an object of the {\tt Random} class.
+By being clever, we can get different ranges --- here are a few examples. In the Java code, assume {\tt i} is an {\tt
+int} variable, {\tt d} is a {\tt double} variable, and {\tt rand} is an object of the {\tt Random} class.
 
 \begin{center}
 \begin{tabular}{p{2.5in}p{3.5in}}
