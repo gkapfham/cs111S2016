@@ -1,7 +1,7 @@
 \input{111pre}
 \begin{document}
-\MYTITLE{Lab 8 \\ 21 October 2015\\
-Due Wednesday, 28 October by 2:30pm }
+
+\MYTITLE{Lab 8\\Assigned: March 9, 2016\\ Due: March 16, 2016 by 2:30pm}
 
 \vspace{-0.2in}
 \subsection*{Objectives}
@@ -132,7 +132,7 @@ public class SudokuCheckerMain
      {
           SudokuChecker checker = new SudokuChecker();
           // TODO: output the required welcome message
-          checker.getGrid();
+          checker.inputGrid();
           checker.checkGrid();
      }
 }
@@ -151,7 +151,7 @@ public class SudokuChecker
 {
      // TODO: declare private data members
      // TODO: define the constructor
-     // TODO: implement the getGrid() method
+     // TODO: implement the inputGrid() method
      // TODO: implement the checkGrid() method
 }
 \end{verbatim}
@@ -179,7 +179,7 @@ The UML diagram for {\tt SudokuChecker} is:
 \hline
 $<<constructor>>$ SudokuChecker( )\\
 \hline
-+ getGrid ( )\\
++ inputGrid ( )\\
 + checkGrid ( )\\
 \hline
 \end{tabular}
@@ -200,7 +200,7 @@ SudokuChecker() &This is the constructor.  It should initialize each of the priv
 that the user has not yet assigned a value to the data member. \\
 \hline
 
-getGrid()   & This public method should read the Sudoku grid from the user row by row, using spaces between values in each row.\\
+inputGrid()   & This public method should read the Sudoku grid from the user row by row, using spaces between values in each row.\\
 \hline
 checkGrid() &   This public method uses the private data members to test whether or not the given values are a valid Sudoku grid.\\
 & Your method does not have to check for the numbers 1 through 4 being used uniquely in each row, column, and region.
@@ -246,22 +246,24 @@ a valid Sudoku board. Please see the instructor if you have questions about thes
 
 \end{itemize}
 
-\vspace{-0.2in}
+\vspace{-0.25in}
 \subsection*{Summary of the Required Deliverables}
 \vspace{-0.05in}
 
 For this assignment you are invited to submit versions of the following deliverables through both the Bitbucket
 repository and in a printed and signed format.
 
-\vspace{-0.05in}
+\vspace{-0.1in}
 \begin{enumerate}
     \setlength{\itemsep}{0pt}
   \item Completed and properly formatted {\tt SudokuChecker.java} and {\tt SudokuCheckerMain.java} files.
 
   \item An output file containing outputs obtained from running {\tt SudokuCheckerMain} five times.
 
+  \item A reflection on the challenges that you faced when completing this laboratory assignment.
+
 \end{enumerate}
-\vspace{-0.05in}
+\vspace{-0.075in}
 
 \noindent As you complete this step, you should make sure that you created a {\tt lab8/} directory within your Git
 repository.  Then, you can save all of the required deliverables in the {\tt lab8/} directory---please see the course
