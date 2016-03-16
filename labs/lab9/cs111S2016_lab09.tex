@@ -1,7 +1,10 @@
 \input{111pre}
 \begin{document}
-\MYTITLE{Lab 9 \\ 28 October 2015\\
-Due Friday, 6 November by 12:00 noon}
+
+\MYTITLE{Lab 9\\Assigned: March 16, 2016\\ Due: March 30, 2016 by 2:30pm}
+
+% \MYTITLE{Lab 9 \\ 28 October 2015\\
+% Due Friday, 6 November by 12:00 noon}
 
 \vspace{-0.2in}
 \subsection*{Objectives}
@@ -33,9 +36,9 @@ repository.
 \subsection*{Reading Assignment}
 \vspace{-0.05in}
 
-To continue to learn more about ``{\tt if/else if/else}'' statements and boolean expressions, please again review
-Sections 5.1--5.3. Since this assignment will also require you to continue to use Java classes and methods, you should
-once again review Sections 4.1--4.5.  To best prepare for the new content in this laboratory assignment, you should also
+To continue to learn more about ``{\tt if/else-if/else}'' statements and boolean expressions, please again review
+Sections 5.1 -- 5.3. Since this assignment will also require you to continue to use Java classes and methods, you should
+once again review Sections 4.1 -- 4.5.  To best prepare for the new content in this laboratory assignment, you should also
 study Sections 5.4--5.6, paying particularly close attention to the material about {\tt while} loops, {\tt break} and
 {\tt continue} statements, text file input, iterators, and the {\tt java.util.ArrayList} class. Students who are not
 familiar with text-based todo list management tools are encouraged to review, as an example, \url{http://todotxt.com/}.
@@ -44,9 +47,9 @@ familiar with text-based todo list management tools are encouraged to review, as
 \subsection*{Create a New Directory and Starting the Project}
 \vspace{-0.05in}
 
-After changing into the ``{\tt cs111F2015-share/}'' directory, which contains our course's version control repository,
+After changing into the ``{\tt cs111S2016-share/}'' directory, which contains our course's version control repository,
 you should type the command ``{\tt git pull}'' to download the source code for this assignment.  In your team's
-repository called ``{\tt cs111F2015-<first-partner-name>-<second-partner-name>}'' and the ``{\tt labs/}'' directory, create
+repository called ``{\tt cs111S2016-<first-partner-name>-<second-partner-name>}'' and the ``{\tt labs/}'' directory, create
 a directory called ``{\tt lab9}''. Using the method described in a previous laboratory assignment, please copy the
 source code from the share repository to your own repository. Now, change into the ``{\tt labs/lab9/}'' directory, in
 your team's Git repository, and use ``{\tt gvim}'' to study the source code of the provided files. What methods do these
@@ -57,9 +60,15 @@ The Java classes that you have downloaded provide the preliminary features for a
 part of this assignment, you will document all of the provided source code and then add new methods that furnish new
 features.  Then, you will run this program multiple times to demonstrate the correctness of the finished system. To
 start this assignment, it is a good idea to draw diagrams like the ones in Figures 4.4 and 4.7 of the textbook to
-understand the classes involved in the program and the flow of control between method invocations. Next, to understand
-the structure of the {\tt TodoList} class, you may want to use the Lightweight Java Visualizer (LJV), as explained in a
-previous assignment, to create a diagram of its structure in the computer's memory.
+understand the classes involved in the program and the flow of control between the various method invocations. Before
+you and your partner start to implement the code for this assignment, it is a good idea for you to draw a ``road map''
+that explains the classes and methods in your proposed solution.
+
+% Next, to understand the structure of the {\tt TodoList} class, you may want to use the Lightweight Java Visualizer
+% (LJV), as explained in a previous assignment, to create a diagram of its structure in the computer's memory.
+
+% Please see the course instructor or one of the teaching assistants if you are not sure how to create the suggested
+% diagram.
 
 \vspace{-0.1in}
 \subsection*{Understanding the Todo List Manager}
@@ -70,17 +79,16 @@ included below this paragraph. An individual line in the ``{\tt todo.txt}'' file
 ``Priority, Category, Task'' where ``{\tt A}'' is the most important priority (with ``{\tt B}'' being the next level,
 and so on), ``{\tt Understand}'' being an example of a category, and ``{\tt Use the LJV to see the TodoList}'' is a
 task.  Following this format for a task, you should consider adding in all of items that you and your partner must
-complete in order to successfully finish this assignment. That is, you can actually use your todo list
-manager to assist you as you complete both this project, later practical and laboratory assignments, and the upcoming
-final project!
+complete in order to successfully finish this assignment. That is, you can actually use your todo list manager to assist
+you as you complete both this project, later practical and laboratory assignments, and the upcoming final project!
 
-\vspace{-0.05in}
+\vspace{-0.1in}
 \begin{verbatim}
 A,Understand,Draw diagram(s) to explain classes
 A,Understand,Use the LJV to see TodoList
 B,Explain,Add comments to all of the Todo classes
 \end{verbatim}
-\vspace{-0.05in}
+\vspace{-0.1in}
 
 \vspace{-0.15in}
 \subsection*{Implementing New Features}
