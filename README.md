@@ -1,6 +1,6 @@
 # Computer Science 111 Spring 2016
 
-This repository contains the LaTeX and HTML source code for the laboratory and practical assignments, course review
+This repository contains the LaTeX and HTML source code for the laboratory and practical assignments, course teaching
 slides, study guides, and the syllabus for Computer Science 111, Spring 2016.  Taught by [Gregory M.
 Kapfhammer](http://www.cs.allegheny.edu/sites/gkapfham) in the [Department of Computer
 Science](http://www.cs.allegheny.edu) at [Allegheny College](http://www.allegheny.edu), the course has the following
@@ -30,7 +30,7 @@ You can type the following command if you want to clone this repository:
 git clone https://github.com/gkapfham/cs111S2016.git
 ```
 
-Then, if you want to compile the LaTeX document to a PDF, you should type the following commands. In this example, I
+If you want to compile the LaTeX document to a PDF, then you should type the following commands. In this example, I
 show how to compile the syllabus for the course.
 
 ```shell
