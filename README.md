@@ -1,7 +1,7 @@
 # Computer Science 111 Spring 2016
 
 This repository contains the LaTeX and HTML source code for the laboratory and practical assignments, course review
-slides, study guides, and the syllabus for Computer Science 112, Spring 2016.  Taught by [Gregory M.
+slides, study guides, and the syllabus for Computer Science 111, Spring 2016.  Taught by [Gregory M.
 Kapfhammer](http://www.cs.allegheny.edu/sites/gkapfham) in the [Department of Computer
 Science](http://www.cs.allegheny.edu) at [Allegheny College](http://www.allegheny.edu), the course has the following
 description:
